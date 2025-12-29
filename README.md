@@ -64,9 +64,31 @@ WHERE order_date >= '2025-01-01';
 
 ```
 
+<img width="807" height="243" alt="Found 3 data tests, 5 models, 2 sources, 637 nacros" src="https://github.com/user-attachments/assets/feef784e-d9ba-40a8-987d-923927074406" />
+
+Step 4 - Testing & Documentation
+
+dbt allows for tests to be defined in .yml files to enforce uniqueness, not-null constraints, and referential integrity.
+
+These tests are critical — especially in production — because they catch bad assumptions earlier.
 
 
+<img width="400" height="93" alt="cosmos" src="https://github.com/user-attachments/assets/e040c9fb-bf0e-47fb-ad40-cbe030d2239e" />
 
+<img width="250" height="250" alt="docker" src="https://github.com/user-attachments/assets/035adc5b-a646-4223-a819-0e0f270dc717" />
+
+Cosmos converts dbt projects into native Airflow DAG.
+Instead of treating dbt as a single opaque command (dbt run), Cosmos:
+Parses your dbt project
+Reads ref() dependencies
+Translates dbt models into individual Airflow tasks
+Preserves dbt’s DAG inside Airflow
+This gives you true orchestration, not just scheduling.
+Then docker is used as cosmos alone isn’t enough. dbt still needs, A specific Python version, Specific dbt + adapter versions, Snowflake connector compatibility, and consistent filesystem paths
+Docker solves this by locking the runtime environment.
+Airflow itself runs inside Docker, and dbt runs in a dedicated dbt container mounted into Airflow.
+
+<img width="1600" height="657" alt="airflow" src="https://github.com/user-attachments/assets/abff65c4-581e-4a6c-8818-d87923e6a14a" />
 
 
 
