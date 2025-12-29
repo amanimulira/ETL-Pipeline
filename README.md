@@ -1,16 +1,19 @@
-Welcome to your new dbt project!
+This is a breakdown of the complete process of constructing a modern ELT (Extract-Load-Transform) pipeline using:
 
-### Using the starter project
+- Dbt (Data Build Tool) for transformations,
+- Snowflake as the cloud data warehouse, and 
+- Apache Airflow for workflow orchestration. 
 
-Try running the following commands:
-- dbt run
-- dbt test
+Unlike traditional ETL, where data is transformed before it’s loaded, ELT loads raw data into the warehouse first and then transforms it in place. This pattern is ideal for cloud warehousing because it takes advantage of scalable compute and makes transformation independent of data ingestion tooling.
+
+The Data Stack:
+
+<img width="200" height="100" alt="image" src="https://github.com/user-attachments/assets/e0facbf1-d4e7-496c-be94-9d0d729fb692" />
 
 
-### Resources:
-- Learn more about dbt [in the docs](https://docs.getdbt.com/docs/introduction)
-- Check out [Discourse](https://discourse.getdbt.com/) for commonly asked questions and answers
-- Join the [chat](https://community.getdbt.com/) on Slack for live discussions and support
-- Find [dbt events](https://events.getdbt.com) near you
-- Check out [the blog](https://blog.getdbt.com/) for the latest news on dbt's development and best practices
-# ETL-Pipeline
+dbt lets us transform data in SQL with software engineering principles such as modularity, tests, version control, and documentation built in. It turns SQL queries into reusable, tested data models.
+
+Snowflake is a cloud-native data warehouse that separates compute from storage, allowing dynamic scaling and cost-efficient processing of large datasets – great for running dbt models.
+Apache airflow orchestrates tasks in a DAG (Directed Acyclic Graph), ensuring that steps like ingest → transform → test → deploy run reliably, monitorably, and on a schedule.
+
+Together, they form a modern data stack which can be used in analytics engineering and data platforms. 
