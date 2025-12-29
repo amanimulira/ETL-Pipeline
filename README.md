@@ -8,8 +8,11 @@ Unlike traditional ETL, where data is transformed before it’s loaded, ELT load
 
 The Data Stack:
 
-<img width="200" height="100" alt="image" src="https://github.com/user-attachments/assets/e0facbf1-d4e7-496c-be94-9d0d729fb692" />
+<img width="200" height=auto alt="image" src="https://github.com/user-attachments/assets/e0facbf1-d4e7-496c-be94-9d0d729fb692" />
 
+<img width="1280" height="307" alt="image" src="https://github.com/user-attachments/assets/988c0eb6-18db-4a09-b7a7-82de277442bf" />
+
+<img width="1200" height="464" alt="image" src="https://github.com/user-attachments/assets/a43c2449-32aa-485c-9c1f-bef9ae739184" />
 
 dbt lets us transform data in SQL with software engineering principles such as modularity, tests, version control, and documentation built in. It turns SQL queries into reusable, tested data models.
 
