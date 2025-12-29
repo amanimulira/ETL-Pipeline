@@ -73,9 +73,9 @@ dbt allows for tests to be defined in .yml files to enforce uniqueness, not-null
 These tests are critical — especially in production — because they catch bad assumptions earlier.
 
 
-<img width="400" height="93" alt="cosmos" src="https://github.com/user-attachments/assets/e040c9fb-bf0e-47fb-ad40-cbe030d2239e" />
+<img width=auto height="100" alt="cosmos" src="https://github.com/user-attachments/assets/e040c9fb-bf0e-47fb-ad40-cbe030d2239e" />
 
-<img width="250" height="250" alt="docker" src="https://github.com/user-attachments/assets/035adc5b-a646-4223-a819-0e0f270dc717" />
+<img width=auto height="100" alt="docker" src="https://github.com/user-attachments/assets/035adc5b-a646-4223-a819-0e0f270dc717" />
 
 Cosmos converts dbt projects into native Airflow DAG.
 Instead of treating dbt as a single opaque command (dbt run), Cosmos:
